@@ -5,8 +5,7 @@ Welcome to an overview and complete guide to the ALMA BCG data processing for St
 **Disclaimer:** This project is done on Apple MacBook Pro with Apple M3 Pro chip. The following instructions are tailored for this particular machine, so CASA will be running on the Mac version instead of the usual version.
 
 
-### Environments and CASA Versions
-
+## Environments and CASA Versions
 Other than the reimaging from the CASA pipeline itself, all data processing will be working in a specific environment that I have tailored for this project. While the packages should not be outdated anytime soon, please double check ahead of time just in case.
 
 If you also have questions on how to create or delete an enviroment (or duplicating, etc), please go and refer to the **Environment** folder.
