@@ -1,5 +1,7 @@
 # Preliminary Check on BCG Spectral Cubes
 
+---
+
 ## CARTA
 Before starting the data processing for the targets, we will first  perform a visual preliminary assessment of our targets in order to separate detected from non-detected targets at this stage. This allows us to streamline the subsequent data analysis.
 
