@@ -36,7 +36,9 @@ from casagui.apps import run_iclean
 ```
 There are a lot of arguments for the iclean functions, but most will be familiar to those who have used tclean before. For example;
 ```
-run_iclean( vis='test.ms', imagename='try1', imsize=512, cell='12.0arcsec', specmode='cube', interpolation='nearest', nchan=5, start='1.0GHz', width='0.2GHz', pblimit=-1e-05, deconvolver='hogbom', threshold='0.001Jy', niter=50, cycleniter=10, cyclefactor=3 );
+run_iclean( vis='test.ms', imagename='try1', imsize=512, cell='12.0arcsec', specmode='cube', 
+interpolation='nearest', nchan=5, start='1.0GHz', width='0.2GHz', pblimit=-1e-05, 
+deconvolver='hogbom', threshold='0.001Jy', niter=50, cycleniter=10, cyclefactor=3 );
 ```
 
 ### Work Flow for iclean
@@ -49,10 +51,12 @@ Below is the general workflow with iclean:
     - Copy the command from the script, and follow the example below and enter it to the terminal where the CASA is launched
 ```
 run_iclean( vis='uid___A002_X1130247_X1db72_targets.ms.contsub2',
-imagename='D32_revised', imsize=[270, 270], cell='0.29arcsec', usemask='user', phasecenter='ICRS 03:31:32.1698 -027.32.06.976',
-stokes='I', specmode='cube', interpolation='nearest', nchan=237, 
-start='129.69ex71041723GHz', width='7.8135626MHz', outframe='LSRK',
-pblimit=0.2, deconvolver='hogbom', restoringbeam='common', pbcor=True,  gridder='standard', niter=200, threshold='0.0mJy', weighting='briggs', robust=0.5, nsigma=0.0)
+imagename='D32_revised', imsize=[270, 270], cell='0.29arcsec', usemask='user', 
+phasecenter='ICRS 03:31:32.1698 -027.32.06.976', stokes='I', specmode='cube', 
+interpolation='nearest', nchan=237, start='129.69ex71041723GHz', width='7.8135626MHz', outframe='LSRK',
+pblimit=0.2, deconvolver='hogbom', restoringbeam='common', pbcor=True,  
+gridder='standard', niter=200, threshold='0.0mJy', weighting='briggs', 
+robust=0.5, nsigma=0.0)
 ```
 After running the above in the CASA terminal, the interactive screen should appear after some initial setup within the terminal (interactive screen will open based on your preferred browser)
 - The interactive screen allows you to manually draw your mask and perform the cleaning process
