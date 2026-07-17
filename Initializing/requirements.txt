@@ -1,0 +1,12 @@
+ALMA BCG Pipeline - Steven
+
+
+To start running the pipeline itself, please make sure you have the following:\
+
+- All ALMA BCG data in fits file format
+- A csv file containing basic BCG information (ID, RA (deg), DEC (deg), z, CO (2-1) (GHz))
+- Following the folder structure that is shown in the README.md in the Initializing folder on Github
+
+Note: Any missing column in the csv file will result in an error
+
+P.S. This pipeline is actively under construction, all scripts and functions are still in beta}
