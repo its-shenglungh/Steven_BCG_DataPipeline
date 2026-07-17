@@ -11,7 +11,9 @@ Other than the reimaging from the CASA pipeline itself, all data processing will
 If you also have questions on how to create or delete an enviroment (or duplicating, etc), please go and refer to the **Environment** folder.
 
 ## Preliminary Check on the BCG Spectral Cubes
-Before we start, we need to first categorize our BCG into two groups: detected and non-detected. To do so, we can use the **CARTA** software and look at the spectrum window to do a visual assessment. From here, we can use **CASA** to do reimaging for the desired bin values for velocity channel for the spectral cube. The reimaged products are now ready for the data processing.
+Before we start, we need to first categorize our BCG into two groups: detected and non-detected. To do so, we can use the **CARTA** software and look at the spectrum window to do a visual assessment. From here, we can use **CASA** to do reimaging for the desired bin values for velocity channel for the spectral cube. The reimaged products are now ready for the data processing. 
+
+Then, we can start preparing our data. This will require a folder containing all the BCG files as well as a csv file containing the target's basic information. For more detailed instruction, please head over to the **Initializing** folder.
 
 ## Data Processing for Detected BCG
 For the detected BCGs, the data processing is roughly as follows:
