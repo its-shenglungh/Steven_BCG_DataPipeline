@@ -89,6 +89,7 @@ Once the fits file is exported, use CARTA to do some checking if something is wr
 
 After the targets are reimaged, we will be preparing them for the first passing spectral profile which is neccessary for categorizing them. This will be done via the first part of the pipeline, and a folder containing all the BCG data as well as a csv file containing the basic information is needed. The folder structure should look like the following:
 
+```
 project/
 ├── BCG Data/
 │   ├── Origin/
@@ -103,6 +104,7 @@ project/
 │   └── Preparing BCG.ipynb
 │
 └── requirements.txt
+```
 
 A notebook example can be found within the Initializing folder itself, so please refer to it for the correct import and a check on the output.
 
