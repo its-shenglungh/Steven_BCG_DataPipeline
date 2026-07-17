@@ -1,4 +1,5 @@
 # Preliminary Check on BCG Spectral Cubes
+
 This is the beginning of a series of steps for the project. In this section, I will be going over what to do once you obtain the BCG spectral cube. If you want to go straight into the reimaging, please visit my [Notion](https://petite-year-f89.notion.site/ALMA-Data-MacOS-ARM64Pipeline-Related-Info-20a5d039952c80b9b529c5e07e5c17e8) page on what to do with the iclean function as well as regenerating the MS of the data.
 ---
 
@@ -82,6 +83,31 @@ exportfits('imagename', fitsimage='', velocity=False, optical=False, bitpix=-32,
 					stokeslast=True, history=True, dropdeg=False)
 ```
 Once the fits file is exported, use CARTA to do some checking if something is wrong. If there are confusion, please refer to my [Notion](https://petite-year-f89.notion.site/ALMA-Data-MacOS-ARM64Pipeline-Related-Info-20a5d039952c80b9b529c5e07e5c17e8#20e5d039952c801b8658df478fbb2f4a) page for more details.
+
+---
+## Preparing BCG Data (Under construction)
+
+After the targets are reimaged, we will be preparing them for the first passing spectral profile which is neccessary for categorizing them. This will be done via the first part of the pipeline, and a folder containing all the BCG data as well as a csv file containing the basic information is needed. The folder structure should look like the following:
+
+project/
+├── BCG Data/
+│   ├── Origin/
+│   │   ├── member....fits
+│   │   └── ...
+│   └── Updated/
+│
+├── pipeline/
+│   ├── prepare_bcg_data.py
+│
+├── notebooks/
+│   └── Preparing BCG.ipynb
+│
+└── requirements.txt
+
+A notebook example can be found within the Initializing folder itself, so please refer to it for the correct import and a check on the output.
+
+---
+## First Passing Spectral Profile (In progress)
 
 ---
 
